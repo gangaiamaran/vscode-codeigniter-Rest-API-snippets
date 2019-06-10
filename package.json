@@ -7,9 +7,23 @@
     "engines": {
         "vscode": "^1.33.0"
     },
+    "keywords": [
+        "PHP",
+        "CI",
+        "CodeIgniter",
+        "Framework",
+        "Rest",
+        "Rest Api",
+        "Api"
+    ],
     "categories": [
         "Snippets"
     ],
+    "icon": "cilogo.png",
+    "galleryBanner": {
+        "color": "#dd5106",
+        "theme": "dark"
+    },
     "contributes": {
         "snippets": [
             {
