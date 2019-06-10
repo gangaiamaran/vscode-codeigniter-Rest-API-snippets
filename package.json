@@ -1,5 +1,5 @@
 {
-    "name": "CI-REST-API-snippets",
+    "name": "fire-snippets",
     "displayName": "CI-REST-API-snippets",
     "description": "Codeigniter Rest Api snippets",
     "version": "0.0.2",
@@ -20,6 +20,7 @@
         "Snippets"
     ],
     "icon": "cilogo.png",
+    
     "galleryBanner": {
         "color": "#dd5106",
         "theme": "dark"
