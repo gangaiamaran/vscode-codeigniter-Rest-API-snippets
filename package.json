@@ -1,8 +1,8 @@
 {
-    "name": "fire-snippets",
+    "name": "CI-REST-API-snippets",
     "displayName": "CI-REST-API-snippets",
     "description": "Codeigniter Rest Api snippets",
-    "version": "0.0.3",
+    "version": "0.0.1",
     "publisher": "Gangai-Cloudi5",
     "engines": {
         "vscode": "^1.33.0"
@@ -20,7 +20,6 @@
         "Snippets"
     ],
     "icon": "cilogo.png",
-
     "galleryBanner": {
         "color": "#dd5106",
         "theme": "dark"
