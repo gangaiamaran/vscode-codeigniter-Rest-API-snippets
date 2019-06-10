@@ -1,8 +1,9 @@
 {
     "name": "fire-snippets",
-    "displayName": "fire-snippets",
+    "displayName": "CI-REST-API-snippets",
     "description": "codeigniter snippets",
     "version": "0.0.1",
+    "publisher": "Gangai-Cloudi5-publisher",
     "engines": {
         "vscode": "^1.33.0"
     },
@@ -16,5 +17,9 @@
                 "path": "./snippets/snippets.json"
             }
         ]
+    },
+    "repository": {
+    "type": "git",
+    "url": "git://github.com/phpgangai/vscode-codeigniter-Rest-API-snippets.git"
     }
 }
