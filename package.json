@@ -1,7 +1,7 @@
 {
     "name": "CI-REST-API-snippets",
     "displayName": "CI-REST-API-snippets",
-    "description": "codeigniter snippets",
+    "description": "Codeigniter Rest Api snippets",
     "version": "0.0.1",
     "publisher": "Gangai-Cloudi5",
     "engines": {
