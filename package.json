@@ -1,9 +1,8 @@
 {
     "name": "fire-snippets",
-    "displayName": "CI-REST-API-snippets",
-    "description": "Codeigniter Rest Api snippets",
-    "version": "0.0.3",
-    "publisher": "Gangai-Cloudi5",
+    "displayName": "CI-Rest-Api-snippets",
+    "description": "codeigniter rest api snippets",
+    "version": "0.0.1",
     "engines": {
         "vscode": "^1.33.0"
     },
