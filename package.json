@@ -1,8 +1,9 @@
 {
     "name": "fire-snippets",
-    "displayName": "CI-Rest-Api-snippets",
-    "description": "codeigniter rest api snippets",
-    "version": "0.0.1",
+    "displayName": "CI-REST-API-snippets",
+    "description": "Codeigniter Rest Api snippets",
+    "version": "0.0.3",
+    "publisher": "Gangai-Cloudi5",
     "engines": {
         "vscode": "^1.33.0"
     },
@@ -18,7 +19,7 @@
     "categories": [
         "Snippets"
     ],
-    "icon": "https://www.brandeps.com/logo-download/C/CodeIgniter-01.png",
+    "icon": "cilogo.png",
 
     "galleryBanner": {
         "color": "#dd5106",
