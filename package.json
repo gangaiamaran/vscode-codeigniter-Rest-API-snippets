@@ -19,7 +19,7 @@
     "categories": [
         "Snippets"
     ],
-    "icon": "https://raw.githubusercontent.com/phpgangai/vscode-codeigniter-Rest-API-snippets/master/cilogo.png",
+    "icon": "cilogo.png",
     "galleryBanner": {
         "color": "#dd5106",
         "theme": "dark"
