@@ -3,7 +3,7 @@
     "displayName": "CI-REST-API-snippets",
     "description": "codeigniter snippets",
     "version": "0.0.1",
-    "publisher": "Gangai-Cloudi5-publisher",
+    "publisher": "Gangai-Cloudi5",
     "engines": {
         "vscode": "^1.33.0"
     },
