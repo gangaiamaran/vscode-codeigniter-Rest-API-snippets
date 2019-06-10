@@ -1,7 +1,7 @@
 {
-    "name": "fire-snippets",
-    "displayName": "fire-snippets",
-    "description": "codeigniter snippets",
+    "name": "CI-Rest-Api-snippets",
+    "displayName": "CI-Rest-Api-snippets",
+    "description": "codeigniter rest api snippets",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.33.0"
