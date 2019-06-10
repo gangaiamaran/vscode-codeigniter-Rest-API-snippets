@@ -1,0 +1,131 @@
+{
+      "rest_controller":{
+        "prefix": "rest_controller",
+        "body":[
+            "defined('BASEPATH') OR exit('No direct script access allowed');\r\nrequire(APPPATH . 'libraries/REST_Controller.php');\r\n \t$0 \r\n class ${element} extends CI_Controller {\r\nfunction __construct() {\r\n \t$0parent::__construct();\r\n\t$0\r\n\t$0}\r\n\t$0",
+              "\t$0public function index_get()\r\n\t$0{\r\n\t$0",
+              "\t$0}\r\n}\r\n/** End of file ${element}.php **/"
+               
+        ],
+       "description": "Creates Base Rest Api controller"
+      },
+      "get_method": {
+        "prefix": "get_method",
+        "body": [
+          "public function ${element}_get() {",
+            "\t$0",
+            "\t$0}"
+        ],
+        "description": "Creates get request method"
+      },
+      "post_method": {
+        "prefix": "post_method",
+        "body": [
+          "public function ${element}_post() {",
+            "\t$0",
+            "\t$0$${data} = $$this->security->xss_clean($$_POST);",
+            "\t$0",
+            "\t$0$$this->form_validation->set_data($$data);",
+            "\t$0$$this->form_validation->set_rules('${name}', '${message}', 'required');",
+            "\t$0",
+            "\t$0 if ($$this->form_validation->run() == FALSE) {",
+            "     // Form Validation Errors",
+            "     $$this->set_response([",
+            "       'status' => FALSE,",
+            "       'error' => $$this->form_validation->error_array(),",
+            "       'message' => validation_errors()",
+            "        ], REST_Controller::HTTP_NOT_FOUND);",
+            "\t$0",
+            "\t$0  } else {",
+              "\t$0", 
+            "\t$0  }",
+          "\t$0}"
+        ],
+        "description": "Creates post request method"
+      },
+      "put_method": {
+        "prefix": "put_method",
+        "body": [
+          "public function ${element}_put() {",
+            "\t$0",
+            "\t$0}"
+        ],
+        "description": "Creates put request method"
+      },
+      "delete_method": {
+        "prefix": "delete_method",
+        "body": [
+          "public function ${element}_delete() {",
+            "\t$0",
+            "\t$0}"
+        ],
+        "description": "Creates delete request method"
+      },
+      "last_query": {
+        "prefix": "last_query",
+        "body": [
+          "echo $$this->db->last_query();"
+        ],
+        "description": "View last executed query"
+      },
+      "xss_clean": {
+        "prefix": "xss_clean",
+        "body": [
+          " $${data} = $this->security->xss_clean($${param});           "
+        ],
+        "description": "Clean xss"
+      },
+      "HTTP_NOT_FOUND": {
+        "prefix": "http_not_found",
+        "body": [
+          "$$this->set_response([",
+          "       'status' => FALSE,",
+          "       'message' => 'Not Found'",
+          "        ], REST_Controller::HTTP_NOT_FOUND);"
+        ],
+        "description": "HTTP_NOT_FOUND"
+      },
+      "HTTP_OK": {
+        "prefix": "http_ok",
+        "body": [
+          "$$this->set_response([",
+          "       'status' => TRUE,",
+          "       'data'   => $${data} ",
+          "       'message'=> 'Success'",
+          "        ], REST_Controller::HTTP_OK);"
+        ],
+        "description": "HTTP_OK"
+      },
+      "HTTP_UNAUTHORIZED": {
+        "prefix": "http_un_authorized",
+        "body": [
+          "     $$this->set_response([",
+          "       'status' => FALSE,",
+          "       'message'=> 'Un Authorized'",
+          "        ], REST_Controller::HTTP_UNAUTHORIZED);"
+        ],
+        "description": "HTTP_UNAUTHORIZED"
+      },
+      "HTTP_NOT_ACCEPTABLE": {
+        "prefix": "http_not_accept",
+        "body": [
+          "     $$this->set_response([",
+          "       'status' => FALSE,",
+          "       'message'=> 'Not Acceptable'",
+          "        ], REST_Controller::HTTP_NOT_ACCEPTABLE);"
+        ],
+        "description": "HTTP_NOT_ACCEPTABLE"
+      },
+      "HTTP_CUSTOM": {
+        "prefix": "http_custom",
+        "body": [
+          "     $$this->set_response([",
+          "       'status' => FALSE,",
+          "       'message'=> '${message}'",
+          "        ], REST_Controller::${Method});"
+        ],
+        "description": "HTTP_CUSTOM"
+      }
+     
+      
+}
