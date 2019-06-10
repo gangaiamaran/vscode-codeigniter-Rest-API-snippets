@@ -1,5 +1,5 @@
 {
-    "name": "CI-REST-API-snippets",
+    "name": "fire-snippets",
     "displayName": "CI-REST-API-snippets",
     "description": "Codeigniter Rest Api snippets",
     "version": "0.0.1",
@@ -19,7 +19,7 @@
     "categories": [
         "Snippets"
     ],
-    "icon": "cilogo.png",
+    "icon": "https://github.com/phpgangai/vscode-codeigniter-Rest-API-snippets/blob/master/cilogo.png",
     "galleryBanner": {
         "color": "#dd5106",
         "theme": "dark"
