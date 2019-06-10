@@ -1,14 +1,30 @@
 {
     "name": "fire-snippets",
-    "displayName": "fire-snippets",
-    "description": "codeigniter snippets",
-    "version": "0.0.1",
+    "displayName": "CI-REST-API-snippets",
+    "description": "Codeigniter Rest Api snippets",
+    "version": "0.0.3",
+    "publisher": "Gangai-Cloudi5",
     "engines": {
         "vscode": "^1.33.0"
     },
+    "keywords": [
+        "PHP",
+        "CI",
+        "CodeIgniter",
+        "Framework",
+        "Rest",
+        "Rest Api",
+        "Api"
+    ],
     "categories": [
         "Snippets"
     ],
+    "icon": "cilogo.png",
+
+    "galleryBanner": {
+        "color": "#dd5106",
+        "theme": "dark"
+    },
     "contributes": {
         "snippets": [
             {
@@ -16,5 +32,9 @@
                 "path": "./snippets/snippets.json"
             }
         ]
+    },
+    "repository": {
+    "type": "git",
+    "url": "git://github.com/phpgangai/vscode-codeigniter-Rest-API-snippets.git"
     }
 }
