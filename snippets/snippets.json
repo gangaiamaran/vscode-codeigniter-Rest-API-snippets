@@ -2,12 +2,25 @@
       "rest_controller":{
         "prefix": "rest_controller",
         "body":[
-            "defined('BASEPATH') OR exit('No direct script access allowed');\r\nrequire(APPPATH . 'libraries/REST_Controller.php');\r\n \t$0 \r\n class ${element} extends CI_Controller {\r\nfunction __construct() {\r\n \t$0parent::__construct();\r\n\t$0\r\n\t$0}\r\n\t$0",
-              "\t$0public function index_get()\r\n\t$0{\r\n\t$0",
-              "\t$0}\r\n}\r\n/** End of file ${element}.php **/"
-               
+            "defined('BASEPATH') OR exit('No direct script access allowed');",
+            "require(APPPATH . 'libraries/REST_Controller.php');",
+            "\t$0",
+            "class ${element} extends CI_Controller {",
+            "",
+              "function __construct() {",
+                "\t$0parent::__construct();",
+                "\t$0",
+              "\t$0}",
+              "\t$0",
+              "\t$0public function index_get()",
+              "\t$0{",
+                "\t$0",
+              "\t$0}",
+            "}",
+            "/** End of file ${element}.php **/"
+              
         ],
-       "description": "Creates Base Rest Api controller"
+      "description": "Creates Base Rest Api controller"
       },
       "get_method": {
         "prefix": "get_method",
