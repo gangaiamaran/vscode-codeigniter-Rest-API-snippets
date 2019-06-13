@@ -2,22 +2,7 @@
       "rest_controller":{
         "prefix": "rest_controller",
         "body":[
-            "defined('BASEPATH') OR exit('No direct script access allowed');",
-            "require(APPPATH . 'libraries/REST_Controller.php');",
-            "\t$0",
-            "class ${element} extends CI_Controller {",
-            "",
-              "function __construct() {",
-                "\t$0parent::__construct();",
-                "\t$0",
-              "\t$0}",
-              "\t$0",
-              "\t$0public function index_get()",
-              "\t$0{",
-                "\t$0",
-              "\t$0}",
-            "}",
-            "/** End of file ${element}.php **/"
+            "\ndefined('BASEPATH') OR exit('No direct script access allowed');\n\n\trequire(APPPATH . 'libraries/REST_Controller.php');\n\n\tclass ${1:Controllername} extends CI_Controller {\n\nfunction __construct() {\n\tparent::__construct();\n\n\t}\n\n\tpublic function index_get(){\n\n\t}\n}\n/** End of file $1.php **/"
               
         ],
       "description": "Creates Base Rest Api controller"
@@ -25,34 +10,25 @@
       "get_method": {
         "prefix": "get_method",
         "body": [
-          "public function ${element}_get() {",
-            "\t$0",
-            "\t$0}"
+          "public function ${fun_name}_get() {\n\t // Get Method \n}"
         ],
         "description": "Creates get request method"
       },
       "post_method": {
         "prefix": "post_method",
         "body": [
-          "public function ${element}_post() {",
-            "\t$0",
-            "\t$0$${data} = $$this->security->xss_clean($$_POST);",
-            "\t$0",
-            "\t$0$$this->form_validation->set_data($$data);",
-            "\t$0$$this->form_validation->set_rules('${name}', '${message}', 'required');",
-            "\t$0",
-            "\t$0 if ($$this->form_validation->run() == FALSE) {",
+          "public function ${fun_name}_post() { \n\t$${data} = $$this->security->xss_clean($$_POST);\n\t$$this->form_validation->set_data($$data);\n\t$0$$this->form_validation->set_rules('${name}', '${message}', 'required');\n\n\tif ($$this->form_validation->run() == FALSE) {",
             "     // Form Validation Errors",
             "     $$this->set_response([",
             "       'status' => FALSE,",
             "       'error' => $$this->form_validation->error_array(),",
             "       'message' => validation_errors()",
             "        ], REST_Controller::HTTP_NOT_FOUND);",
-            "\t$0",
-            "\t$0  } else {",
-              "\t$0", 
-            "\t$0  }",
-          "\t$0}"
+            "\n\t",
+            "\n\t  } else {",
+              "\n\t  // Success function", 
+            "\n\t  }",
+          "\n\t}"
         ],
         "description": "Creates post request method"
       },
